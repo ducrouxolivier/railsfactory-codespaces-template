@@ -1,0 +1,12 @@
+{
+  "name": "railsfactory-sandbox",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {},
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" },
+    "ghcr.io/devcontainers/features/ruby:1": { "version": "3.4" },
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "onCreateCommand": "sudo mkdir -p /workspaces/rf && sudo chown vscode:vscode /workspaces/rf && sudo ln -sfn /workspaces/rf /workspace"
+}
